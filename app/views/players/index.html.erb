@@ -1,0 +1,7 @@
+<h1> Leaderboard </h1>
+
+<% @players.each do |player| %>
+  <p><%= "#{player.name}, #{player.ranking}"%></p>
+  <% end %>
+
+<%= link_to "Homepage", pages_path%>
